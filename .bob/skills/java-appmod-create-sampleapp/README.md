@@ -48,7 +48,7 @@ You need the following software to be installed:
 - IBM Application Modernization Accelerator (AMA) v4+
 - In case of AMA v5, you also need an access key (PoC key or Full Key)
 - IBM Bob v2
-- Optional Traditional WAS 9.0.5
+- Traditional WAS 9.0.5 or in minimum the file **was_public.jar** which is in the WAS_HOME/dev by default.
 
 If you do not have such an environment, you can request a Techzone Environment called **"Application Modernization VM - for Liberty, AMA, IBM Bob"** which has traditional WAS, AMA and IBM Bob installed.
 https://techzone.ibm.com/collection/liberty-getting-started-labs-demos/journey-modernization-tools.
@@ -73,26 +73,19 @@ https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Lab
 
 ### Download and install the skill
 1. Create a project directory for the sample app (e.g. ~/work/createSampleApp).
-2. If you cannot download the skill from the Marketplace, use the following approach:
-    1. Create a temporary directory for the CE Skill (e.g. ~/temp).
-    2. Download the content of the git repository https://github.ibm.com/Lars-Besselmann/ce-bob.git via git clone or via zip download into the temporary directory.
-    3. If using zip download, extract the file into the temporary directory.
-    4. Create a directory for the bob skills **.bob/skills**.
 
-            mkdir -p ~/work/createSampleApp/.bob/skills
+        mkdir -p ~/work/createSampleApp
 
+2. Clone the repository:
 
-    5. Copy the directory **java-appmod-create-sampleapp** from the temporary directory into the skills directory of the project.
+        git clone https://github.com/LarsBesselmann/create-tWAS-app-skill.git ~/work/createSampleApp
 
-            cp -r ~/temp/ce-bob-main/SKILLS/java-appmod-create-sampleapp/ ~/work/createSampleApp/.bob/skills
-
-    6. Open IBM Bob
-
+3. Open IBM Bob 
             
             cd ~/work/createSampleApp
             bobide .
 
-    7. Verify that the skill is available
+4. Verify that the skill is available
 
 
 

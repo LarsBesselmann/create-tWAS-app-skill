@@ -48,7 +48,7 @@ You need the following software to be installed:
 - IBM Application Modernization Accelerator (AMA) v4+
 - In case of AMA v5, you also need an access key (PoC key or Full Key)
 - IBM Bob v2
-- Optional Traditional WAS 9.0.5
+- Traditional WAS 9.0.5 or in minimum the file **was_public.jar** which is in the WAS_HOME/dev by default.
 
 If you do not have such an environment, you can request a Techzone Environment called **"Application Modernization VM - for Liberty, AMA, IBM Bob"** which has traditional WAS, AMA and IBM Bob installed.
 https://techzone.ibm.com/collection/liberty-getting-started-labs-demos/journey-modernization-tools.
