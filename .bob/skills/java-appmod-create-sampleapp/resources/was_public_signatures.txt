@@ -1,0 +1,139 @@
+public final class com.ibm.websphere.security.WSSecurityHelper {
+  public com.ibm.websphere.security.WSSecurityHelper();
+  public static boolean isServerSecurityEnabled();
+  public static boolean isGlobalSecurityEnabled();
+  public static java.lang.String getFirstCaller();
+  public static java.lang.String getFirstServer();
+  public static java.lang.String[] getCallerList();
+  public static java.lang.String[] getServerList();
+  public static java.lang.String[] getPropagationAttributes(java.lang.String) throws com.ibm.websphere.security.WSSecurityException;
+  public static java.lang.String[] addPropagationAttribute(java.lang.String, java.lang.String) throws com.ibm.websphere.security.WSSecurityException;
+  public static byte[] convertCookieStringToBytes(java.lang.String);
+  public static void revokeSSOCookies(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse);
+  public static void revokeSSOCookiesForPortlets(javax.portlet.ActionRequest, javax.portlet.ActionResponse);
+  public static javax.servlet.http.Cookie getLTPACookieFromSSOToken() throws java.lang.Exception;
+}
+
+public class com.ibm.websphere.security.web.WebSecurityHelper {
+  public com.ibm.websphere.security.web.WebSecurityHelper();
+  public static javax.servlet.http.Cookie getSSOCookieFromSSOToken() throws java.lang.Exception;
+}
+
+public final class com.ibm.websphere.security.auth.WSSubject {
+  public static java.lang.Object doAs(javax.security.auth.Subject, java.security.PrivilegedAction);
+  public static java.lang.Object doAs(javax.security.auth.Subject, java.security.PrivilegedAction, boolean);
+  public static java.lang.Object doAs(javax.security.auth.Subject, java.security.PrivilegedExceptionAction) throws java.security.PrivilegedActionException;
+  public static java.lang.Object doAs(javax.security.auth.Subject, java.security.PrivilegedExceptionAction, boolean) throws java.security.PrivilegedActionException;
+  public static java.lang.Object doAsPrivileged(javax.security.auth.Subject, java.security.PrivilegedAction, java.security.AccessControlContext);
+  public static java.lang.Object doAsPrivileged(javax.security.auth.Subject, java.security.PrivilegedAction, java.security.AccessControlContext, boolean);
+  public static java.lang.Object doAsPrivileged(javax.security.auth.Subject, java.security.PrivilegedExceptionAction, java.security.AccessControlContext) throws java.security.PrivilegedActionException;
+  public static java.lang.Object doAsPrivileged(javax.security.auth.Subject, java.security.PrivilegedExceptionAction, java.security.AccessControlContext, boolean) throws java.security.PrivilegedActionException;
+  public static javax.security.auth.Subject getCallerSubject() throws com.ibm.websphere.security.WSSecurityException;
+  public static javax.security.auth.Subject getRunAsSubject() throws com.ibm.websphere.security.WSSecurityException;
+  public static void setRunAsSubject(javax.security.auth.Subject) throws com.ibm.websphere.security.WSSecurityException;
+  public static java.lang.String getCallerPrincipal();
+  public static java.lang.String getSAFUserFromSubject(javax.security.auth.Subject);
+  public static java.lang.Throwable getRootLoginException();
+}
+
+public class com.ibm.websphere.servlet.response.ResponseUtils {
+  public com.ibm.websphere.servlet.response.ResponseUtils();
+  public static java.lang.String encodeDataString(java.lang.String);
+}
+
+public class com.ibm.wsspi.ssl.RetrieveSignersHelper {
+  public static void main(java.lang.String[]);
+  public static com.ibm.wsspi.ssl.RetrieveSignersHelper getInstance();
+  public int callRetrieveSigners(java.lang.String[]);
+  public void autoAcceptSignerForThisConnectionOnly();
+  public void autoAcceptSignerAndStoreInTrustStore();
+}
+
+
+public interface com.ibm.websphere.cache.DistributedMap extends java.util.Map {
+  public abstract void setSharingPolicy(int);
+  public abstract int getSharingPolicy();
+  public abstract void setDRSBootstrap(boolean);
+  public abstract boolean isDRSBootstrapEnabled();
+  public abstract void setTimeToLive(int);
+  public abstract void setPriority(int);
+  public abstract java.lang.Object get(java.lang.Object);
+  public abstract java.lang.Object put(java.lang.Object, java.lang.Object);
+  public abstract java.lang.Object put(java.lang.Object, java.lang.Object, int, int, int, java.lang.Object[]);
+  public abstract java.lang.Object put(java.lang.Object, java.lang.Object, int, int, int, int, java.lang.Object[]);
+  public abstract void invalidate(java.lang.Object);
+  public abstract void invalidate(java.lang.Object, boolean);
+  public abstract boolean enableListener(boolean);
+  public abstract boolean addInvalidationListener(com.ibm.websphere.cache.InvalidationListener);
+  public abstract boolean removeInvalidationListener(com.ibm.websphere.cache.InvalidationListener);
+  public abstract boolean addChangeListener(com.ibm.websphere.cache.ChangeListener);
+  public abstract boolean removeChangeListener(com.ibm.websphere.cache.ChangeListener);
+  public abstract void addAlias(java.lang.Object, java.lang.Object[]);
+  public abstract void removeAlias(java.lang.Object);
+  public abstract int size(boolean);
+  public abstract boolean isEmpty(boolean);
+  public abstract boolean containsKey(java.lang.Object, boolean);
+  public abstract java.util.Set keySet(boolean);
+}
+
+public abstract class com.ibm.websphere.cache.DistributedObjectCache 
+    implements com.ibm.websphere.cache.DistributedNioMap,
+               com.ibm.websphere.cache.DistributedMap {
+  
+  // Constants
+  public static final int TYPE_DISTRIBUTED_MAP = 1;
+  public static final int TYPE_DISTRIBUTED_LOCKING_MAP = 2;
+  public static final int TYPE_DISTRIBUTED_NIO_MAP = 3;
+  
+  // Constructor
+  public com.ibm.websphere.cache.DistributedObjectCache();
+  
+  // Methods
+  public abstract int getMapType();
+}
+
+
+
+
+
+public class com.ibm.wsspi.cache.DistributedObjectCacheFactory {
+  public static final java.lang.String KEY_CACHE_SIZE;
+  public static final java.lang.String KEY_DISABLE_DEPENDENCY_ID;
+  public static final java.lang.String KEY_DISABLE_TEMPLATES_SUPPORT;
+  public static final java.lang.String KEY_ENABLE_DISK_OFFLOAD;
+  public static final java.lang.String KEY_ENABLE_NIO_SUPPORT;
+  public static final java.lang.String KEY_DISK_OFFLOAD_LOCATION;
+  public static final java.lang.String KEY_USE_LISTENER_CONTEXT;
+  public static final java.lang.String KEY_FLUSH_TO_DISK_ON_STOP;
+  public static final java.lang.String KEY_ENABLE_CACHE_REPLICATION;
+  public static final java.lang.String KEY_REPLICATION_DOMAIN;
+  public static final java.lang.String KEY_DISKCACHE_PERFORMANCE_LEVEL;
+  public static final java.lang.String KEY_DISK_CLEANUP_FREQUENCY;
+  public static final java.lang.String KEY_DISK_DELAY_OFFLOAD_ENTRIES_LIMIT;
+  public static final java.lang.String KEY_DISK_DELAY_OFFLOAD_DEPID_BUCKETS;
+  public static final java.lang.String KEY_DISK_DELAY_OFFLOAD_TEMPLATE_BUCKETS;
+  public static final java.lang.String KEY_DISKCACHE_EVICTION_POLICY;
+  public static final java.lang.String KEY_DISKCACHE_HIGH_THRESHOLD;
+  public static final java.lang.String KEY_DISKCACHE_LOW_THRESHOLD;
+  public static final java.lang.String KEY_DISKCACHE_SIZE;
+  public static final java.lang.String KEY_DISKCACHE_SIZE_GB;
+  public static final java.lang.String KEY_DISKCACHE_ENTRY_SIZE_MB;
+  public static final java.lang.String KEY_LRU_TO_DISK_TRIGGER_PERCENT;
+  public static final java.lang.String KEY_MEMORY_CACHE_SIZE_IN_MB;
+  public static final java.lang.String KEY_MEMORY_CACHE_SIZE_HIGH_THRESHOLD;
+  public static final java.lang.String KEY_MEMORY_CACHE_SIZE_LOW_THRESHOLD;
+  public static final java.lang.String VALUE_TRUE;
+  public static final java.lang.String VALUE_FALSE;
+  public static com.ibm.websphere.cache.DistributedObjectCache getMap(java.lang.String);
+  public static com.ibm.websphere.cache.DistributedObjectCache getMap(java.lang.String, java.util.Properties);
+  public static com.ibm.websphere.cache.DistributedObjectCache createDistributedObjectCache(java.lang.String, java.lang.String, java.util.Properties);
+}
+
+public interface com.ibm.websphere.jtaextensions.ExtendedJTATransaction {
+  public abstract byte[] getGlobalId();
+  public abstract int getLocalId();
+  public abstract void registerSynchronizationCallback(com.ibm.websphere.jtaextensions.SynchronizationCallback) throws com.ibm.websphere.jtaextensions.NotSupportedException;
+  public abstract void registerSynchronizationCallbackForCurrentTran(com.ibm.websphere.jtaextensions.SynchronizationCallback) throws com.ibm.websphere.jtaextensions.NotSupportedException;
+  public abstract void unRegisterSynchronizationCallback(com.ibm.websphere.jtaextensions.SynchronizationCallback) throws com.ibm.websphere.jtaextensions.CallbackNotRegisteredException;
+}
+
