@@ -74,7 +74,7 @@ https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Lab
 ### Download and install the skill
 1. Create a project directory for the sample app (e.g. ~/work/createSampleApp).
 
-        mkdir ~/work/createSampleApp
+        mkdir -p ~/work/createSampleApp
 
 2. Clone the repository:
 
