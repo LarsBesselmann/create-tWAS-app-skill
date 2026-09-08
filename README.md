@@ -73,9 +73,12 @@ https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Lab
 
 ### Download and install the skill
 1. Create a project directory for the sample app (e.g. ~/work/createSampleApp).
+
+        mkdir ~/work/createSampleApp
+
 2. Clone the repository:
 
-        git clone https://github.com/LarsBesselmann/create-tWAS-app-skill.git
+        git clone https://github.com/LarsBesselmann/create-tWAS-app-skill.git ~/work/createSampleApp
 
 3. Open IBM Bob 
             
