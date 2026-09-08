@@ -80,23 +80,20 @@ https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Lab
 
         git clone https://github.com/LarsBesselmann/create-tWAS-app-skill.git ~/work/createSampleApp
 
-3. Open IBM Bob 
+3. Open the IBM Bob IDE
             
-            cd ~/work/createSampleApp
-            bobide .
+        cd ~/work/createSampleApp
+        bobide .
 
 4. Verify that the skill is available
+
+5. Log into Bob
 
 
 
 ### Create a sample application using the skill
-1. Open IBM Bob via
 
-        bobide .
-
-2. Log into Bob
-
-3. To create a traditional WAS application, enter in the chat window the following command:
+To create a traditional WAS application, enter in the chat window the following command:
 
         /java-appmod-create-sampleapp
 
