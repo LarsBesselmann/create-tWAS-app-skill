@@ -63,5 +63,9 @@ The file contains a list of migration issues when migrating from traditional WAS
     - Technology issue: Migrate JAX-RPC to JAX-WS
     - Automatic fix: no
     - How to implement: Implement a JAX-RPC service to retrieve the userid
+    - Important:
+        - Make sure to import javax.xml.rpc.* and to add a JAX-RPC client-side class that references javax.xml.rpc.Service or javax.xml.rpc.Stub. 
+        - Add the IBM-specific WAS deployment extension file ibm-webservices-ext.xmi and if needed also ibm-webservices-bnd.xmi. These are the WAS-specific web services descriptor files that identify a WAS JAX-RPC deployment.
+
 
 

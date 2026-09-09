@@ -78,8 +78,11 @@ Implement only those issues that have been selected.
 
 ### Step 4.2 — Implement some challenging frameworks
 Ask the user if any third-party Java 8 frameworks should be used to implement the application. Offer the following options:
-- Spring 5.3.x
+- Spring 5.3.x 
+- Spring 4.3.x
+- Spring Boot 2.7
 - Apache Struts 1.1
+- Other, please specify
 - none of those frameworks
 
 If a framework has been selected, use that framework to implement the one or other business logic.
