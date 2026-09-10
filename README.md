@@ -135,4 +135,5 @@ The migration issues that can currently be implemented are defined in the file *
 - You can find a tutorial for AMA here: https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Lab
 - You can find a tutorial for AMA + Bob here: https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Bob-Lab
 
-
+### Contact:
+If you have any question, feel free to contact me at lars.besselmann@de.ibm.com.
