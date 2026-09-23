@@ -97,28 +97,28 @@ To create a traditional WAS application, enter in the chat window the following 
 
         /java-appmod-create-sampleapp
 
-    These are the main steps that will be performed:
-    - Step 1 — Select the Application Type
+These are the main steps that will be performed:
+   - Step 1 — Select the Application Type
         - The decision as of now does not really matter as there is no industry specific content.
         - Main impact is on the application name which can be adjusted.
-    - Step 4 — Implement the Required WebSphere APIs
+   - Step 4 — Implement the Required WebSphere APIs
         - Select which issues with automated fixes should be implemented.
         - Select which issues without automated fixes should be implemented.
         - For a demo keep it is recommend to only have 1 or 2 non-automated fxies, otherwise the IBM Bob part of the demo takes too long and you cannot complete the end-2-end demo.
-    - Step 6 — Build the Application
+   - Step 6 — Build the Application
         - The application will be build and packages as ear file. 
-    - Step 8 - Create an AMA workspace, download the datacollector and run it
+   - Step 8 - Create an AMA workspace, download the datacollector and run it
         - If AMA is accessible, the following steps are performed:
             - an AMA workspace gets created
             - the AMA discovery tool is downloaded and installed
             - the AMA discovery tool is executed and the data collection uploaded
         - If AMA is not accessible, this step will be skipped
-    - Step 9 - Generate the AMA migration plan for target Liberty with Java 8
+   - Step 9 - Generate the AMA migration plan for target Liberty with Java 8
         - If AMA is accessible, the following steps are performed:
             - the migration plan will be generated and downloaded
             - the AMA UI will be opened in the created workspace
         - If AMA is not accessible, this step will be skipped
-    - Step 11 - Get ready to demo AMA and IBM Bob
+   - Step 11 - Get ready to demo AMA and IBM Bob
 
 You can find a walk-through without voice here:
 https://ibm.box.com/s/f9d0ww2j0rdq8z0jpced2szv1pm10fmt
