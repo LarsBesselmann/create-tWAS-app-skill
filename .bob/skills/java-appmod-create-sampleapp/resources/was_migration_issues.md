@@ -53,13 +53,7 @@ The file contains a list of migration issues when migrating from traditional WAS
       - getUserByFullName with @XmlType(name="retryEventRequest")
 
 
-4. Review use of the dynamic cache service
-    - Technology issue: Do not use the same XmlType name across multiple classes
-    - Automatic fix: no
-    - How to implement: 
-    Implement a method that uses the WebSphere Dynamic Cache Service API (`DistributedMap`) to implement caching.
-
-5. JAX-RPC is supported in Liberty
+4. JAX-RPC is supported in Liberty
     - Technology issue: Migrate JAX-RPC to JAX-WS
     - Automatic fix: no
     - How to implement: Implement a JAX-RPC service to retrieve the userid
